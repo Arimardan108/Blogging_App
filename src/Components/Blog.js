@@ -23,6 +23,7 @@ export default function Blog() {
               className="input"
               placeholder="Enter the Title of the Blog here.."
               value={title}
+              onChange={(e) => setTitle(e.target.value)}
             />
           </Row>
 
@@ -32,7 +33,7 @@ export default function Blog() {
               className="input content"
               placeholder="Content of the Blog goes here.."
               value={content}
-              onChange={(e) => setTitle(e.target.value)}
+              onChange={(e) => setContent(e.target.value)}
             />
           </Row>
 
