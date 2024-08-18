@@ -8,7 +8,7 @@ export default function Blog() {
   //Passing the synthetic event as argument to stop refreshing the page on submit
   function handleSubmit(e) {
     e.preventDefault();
-    setBlogs({ title, content });
+    setBlogs([{ title, content }, ...blogs]);
     console.log(blogs);
   }
 
