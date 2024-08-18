@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function Blog() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [blogs, setBlogs] = useState([]);
 
   //Passing the synthetic event as argument to stop refreshing the page on submit
   function handleSubmit(e) {
