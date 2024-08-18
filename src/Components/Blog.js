@@ -1,3 +1,4 @@
+import { useState } from "react";
 //Blogging App using Hooks
 export default function Blog() {
   const [title, setTitle] = useState("");
@@ -46,6 +47,8 @@ export default function Blog() {
 
       {/* Section where submitted blogs will be displayed */}
       <h2> Blogs </h2>
+      <h3>{title}</h3>
+      <p>{content}</p>
     </>
   );
 }
