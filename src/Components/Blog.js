@@ -8,6 +8,8 @@ export default function Blog() {
   //Passing the synthetic event as argument to stop refreshing the page on submit
   function handleSubmit(e) {
     e.preventDefault();
+    setBlogs({ title, content });
+    console.log(blogs);
   }
 
   return (
@@ -48,8 +50,6 @@ export default function Blog() {
 
       {/* Section where submitted blogs will be displayed */}
       <h2> Blogs </h2>
-      <h3>{title}</h3>
-      <p>{content}</p>
     </>
   );
 }
